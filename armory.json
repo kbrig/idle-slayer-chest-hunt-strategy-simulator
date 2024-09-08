@@ -1,0 +1,394 @@
+{
+    "Swords": {
+        "Adranos Blade": {
+            "Slot": "Sword",
+            "Main Bonuses": 
+                [{"Bonus Name": "% Souls bonus", "Bonus per Level": 2.0}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Electric-type Souls", "Bonus per Level": 2.0},
+                {"Bonus Name": "% Offline CpS", "Bonus per Level": 2.0},
+                {"Bonus Name": "% Bonus CpS", "Bonus per Level": 1.1}
+            ],
+            "Skills": []
+        },
+        "Boreas Longsword": {
+            "Slot": "Sword",
+            "Main Bonuses": 
+                [{"Bonus Name": "% Fire-type Souls", "Bonus per Level": 15.0}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Bonus CpS", "Bonus per Level": 1.0},
+                {"Bonus Name": "% Souls bonus", "Bonus per Level": 0.2},
+                {"Bonus Name": "% Fire-type souls", "Bonus per Level": 2.0}
+            ],
+            "Skills": []
+        },
+        "Kishar Greatsword": {
+            "Slot": "Sword",
+            "Main Bonuses": 
+                [{"Bonus Name": "% CpS from Coins", "Bonus per Level": 15.0}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Chest hunt Souls", "Bonus per Level": 10.0},
+                {"Bonus Name": "% Bonus CpS", "Bonus per Level": 0.2},
+                {"Bonus Name": "% Enemies", "Bonus per Level": 1.0},
+                {"Bonus Name": "% Emeralds", "Bonus per Level": 0.4}
+            ],
+            "Skills": []
+        }
+    },
+    "Shields": {
+        "Adranos Round Shield": {
+            "Slot": "Shield",
+            "Main Bonuses": 
+                [{"Bonus Name": "% Souls bonus", "Bonus per Level": 1.8}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Materials drop chance", "Bonus per Level": 0.2},
+                {"Bonus Name": "% Souls bonus from Criticals", "Bonus per Level": 0.5},
+                {"Bonus Name": "% Giants Souls", "Bonus per Level": 1.7}
+            ],
+            "Skills": []
+        },
+        "Boreas Shield": {
+            "Slot": "Shield",
+            "Main Bonuses": 
+                [{"Bonus Name": "% Souls bonus from Criticals", "Bonus per Level": 4.8}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Spirit Boost Chance", "Bonus per Level": 0.4},
+                {"Bonus Name": "% Sapphires", "Bonus per Level": 0.3},
+                {"Bonus Name": "% Fire-type souls", "Bonus per Level": 0.8}
+            ],
+            "Skills": []
+        },
+        "Kishar Shield": {
+            "Slot": "Shield",
+            "Main Bonuses": 
+                [{"Bonus Name": "% Souls bonus from Criticals", "Bonus per Level": 5.5}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Spirit Boost Chance", "Bonus per Level": 0.4},
+                {"Bonus Name": "% in-game Souls bonus", "Bonus per Level": 0.3},
+                {"Bonus Name": "% Giant Souls", "Bonus per Level": 1.5}
+            ],
+            "Skills": []
+        },
+        "Coimbo Shield": {
+            "Slot": "Shield",
+            "Main Bonuses": [
+                {"Bonus Name": "% Coins spawn rate", "Bonus per Level": 1.5},
+                {"Bonus Name": "% Coin pick up bonus", "Bonus per Level": 1.5}
+            ],
+            "Optional Bonuses": [],
+            "Skills": [
+                {"Skill Name": "Coimbo Mode"}
+            ],
+            "Key Item": true
+        }
+    },
+    "Armors": {
+        "Adranos Armor": {
+            "Slot": "Armor",
+            "Main Bonuses": 
+                [{"Bonus Name": "% offline CpS", "Bonus per Level": 7}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Boost's max speed", "Bonus per Level": 0.2},
+                {"Bonus Name": "% Giants Souls", "Bonus per Level": 0.25},
+                {"Bonus Name": "% in-game Souls bonus", "Bonus per Level": 0.7}
+            ],
+            "Skills": []
+        },
+        "Boreas Armor": {
+            "Slot": "Armor",
+            "Main Bonuses": 
+                [{"Bonus Name": "% offline CpS", "Bonus per Level": 6}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Cps from Coin", "Bonus per Level": 3},
+                {"Bonus Name": "% bonus CpS", "Bonus per Level": 0.5},
+                {"Bonus Name": "% increase Collectables Magnet radius", "Bonus per Level": 1}
+            ],
+            "Skills": []
+        },
+        "Kishar Armor": {
+            "Slot": "Armor",
+            "Main Bonuses": 
+                [{"Bonus Name": "% offline CpS", "Bonus per Level": 5}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Cps from Coin", "Bonus per Level": 3},
+                {"Bonus Name": "% Coins from Enemies", "Bonus per Level": 3},
+                {"Bonus Name": "% enemies", "Bonus per Level": 0.5}
+            ],
+            "Skills": []
+        },
+        "Tactical Armor Plate": {
+            "Slot": "Armor",
+            "Main Bonuses": [],
+            "Optional Bonuses": [],
+            "Skills": [
+                {"Skill Name": "The Collector: +5 per enemy, coins, gemstones or boxes for quests. (in-game only)"}
+            ],
+            "Key Item": true
+        }
+    },
+    "Helmets": {
+        "Adranos Helmet": {
+            "Slot": "Helmet",
+            "Main Bonuses": 
+                [{"Bonus Name": "% offline Souls", "Bonus per Level": 2}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Coins Value", "Bonus per Level": 2.1},
+                {"Bonus Name": "% bonus CpS", "Bonus per Level": 0.8},
+                {"Bonus Name": "% Giants spawn rate", "Bonus per Level": 0.2},
+                {"Bonus Name": "-% Normal Coins Box chance", "Bonus per Level": -0.05}
+            ],
+            "Skills": []
+        },
+        "Boreas Helmet": {
+            "Slot": "Helmet",
+            "Main Bonuses": 
+                [{"Bonus Name": "% offline Souls", "Bonus per Level": 2}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Coins Value", "Bonus per Level": 2.1},
+                {"Bonus Name": "% bonus CpS", "Bonus per Level": 0.8},
+                {"Bonus Name": "% Giants spawn rate", "Bonus per Level": 0.2},
+                {"Bonus Name": "-% Normal Coins Box chance", "Bonus per Level": -0.05}
+            ],
+            "Skills": []
+        },
+        "Kishar Helmet": {
+            "Slot": "Helmet",
+            "Main Bonuses": 
+                [{"Bonus Name": "% offline Souls", "Bonus per Level": 2.2}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Coins Value", "Bonus per Level": 2.5},
+                {"Bonus Name": "% bonus CpS", "Bonus per Level": 0.4},
+                {"Bonus Name": "% Giants spawn rate", "Bonus per Level": 0.4},
+                {"Bonus Name": "-% Normal Coins Box chance", "Bonus per Level": -0.05}
+            ],
+            "Skills": []
+        }
+    },
+    "Boots": {
+        "Adranos Boots": {
+            "Slot": "Boots",
+            "Main Bonuses": [
+                {"Bonus Name": "% bonus CpS", "Bonus per Level": 2.2},
+                {"Bonus Name": "% Fire-type Souls", "Bonus per Level": 4.5}
+            ],
+            "Optional Bonuses": [
+                {"Bonus Name": "-% boost cooldown for every coin collected", "Bonus per Level": -0.4},
+                {"Bonus Name": "% Offline Souls", "Bonus per Level": 0.3},
+                {"Bonus Name": "% Coin Pick up Bonus", "Bonus per Level": 7}
+            ],
+            "Skills": []
+        },
+        "Boreas Boots": {
+            "Slot": "Boots",
+            "Main Bonuses": [
+                {"Bonus Name": "% bonus CpS", "Bonus per Level": 1.7},
+                {"Bonus Name": "% Souls in Frozen Fields", "Bonus per Level": 6.8}
+            ],
+            "Optional Bonuses": [
+                {"Bonus Name": "-% boost cooldown for every coin collected", "Bonus per Level": -0.32},
+                {"Bonus Name": "% Offline Souls", "Bonus per Level": 0.38},
+                {"Bonus Name": "% Coin Pick up Bonus", "Bonus per Level": 11.2}
+            ],
+            "Skills": []
+        },
+        "Kishar Boots Boots": {
+            "Slot": "Boots",
+            "Main Bonuses": [
+                {"Bonus Name": "% bonus CpS", "Bonus per Level": 1.9},
+                {"Bonus Name": "% Electric-type Souls", "Bonus per Level": 4.5}
+            ],
+            "Optional Bonuses": [
+                {"Bonus Name": "-% boost cooldown for every coin collected", "Bonus per Level": -0.25},
+                {"Bonus Name": "% Offline Souls", "Bonus per Level": 0.55},
+                {"Bonus Name": "% Coin Pick up Bonus", "Bonus per Level": 9}
+            ],
+            "Skills": []
+        }
+    },
+    "Rings": {
+        "Victor's Ring": {
+            "Slot": "Ring",
+            "Main Bonuses": 
+                [{"Bonus Name": "% Souls Bonus from Criticals", "Bonus per Level": 1}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% attack speed of the Bow", "Bonus per Level": 1},
+                {"Bonus Name": "% Craftable Item Duration", "Bonus per Level": 2},
+                {"Bonus Name": "% Critical Hit Chance", "Bonus per Level": 0.2}
+            ],
+            "Skills": []
+        },
+        "Will Skull Ring": {
+            "Slot": "Ring",
+            "Main Bonuses": 
+                [{"Bonus Name": "% Souls Bonus", "Bonus per Level": 0.8}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Dark-type Souls", "Bonus per Level": 3.1},
+                {"Bonus Name": "% Wind Dash Souls", "Bonus per Level": 0.2},
+                {"Bonus Name": "+x Rage Mode Souls Multiplier", "Bonus per Level": 0.1}
+            ],
+            "Skills": []
+        },
+        "Ring of Luck": {
+            "Slot": "Ring",
+            "Main Bonuses": [
+                {"Bonus Name": "% Bonus Stage Armory Chests", "Bonus per Level": 8},
+                {"Bonus Name": "% Chest Hunt Armory Chests", "Bonus per Level": 0.35},
+                {"Bonus Name": "% Excellent Chance", "Bonus per Level": 1}
+            ],
+            "Optional Bonuses": [],
+            "Skills": [],
+            "Key Item": true
+        }
+    },
+    "Daggers": {
+        "Adranos Dagger": {
+            "Slot": "Dagger",
+            "Main Bonuses": [
+                {"Bonus Name": "% bonus CpS", "Bonus per Level": 0.45},
+                {"Bonus Name": "% bonus Souls", "Bonus per Level": 0.45}
+            ],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Souls Bonus", "Bonus per Level": 0.8},
+                {"Bonus Name": "% Souls Bonus from Criticals", "Bonus per Level": 0.35},
+                {"Bonus Name": "% Fire-type Souls", "Bonus per Level": 2.2}
+            ],
+            "Skills": []
+        },
+        "Boreas Dagger": {
+            "Slot": "Dagger",
+            "Main Bonuses": [
+                {"Bonus Name": "% bonus CpS", "Bonus per Level": 0.42},
+                {"Bonus Name": "% bonus Souls", "Bonus per Level": 0.42}
+            ],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Souls Bonus in Frozen Fields", "Bonus per Level": 3.5},
+                {"Bonus Name": "% Souls Bonus from Criticals", "Bonus per Level": 0.4},
+                {"Bonus Name": "% Bonus CpS", "Bonus per Level": 1.2}
+            ],
+            "Skills": []
+        },
+        "Kishar Dagger": {
+            "Slot": "Dagger",
+            "Main Bonuses": [
+                {"Bonus Name": "% bonus CpS", "Bonus per Level": 0.39},
+                {"Bonus Name": "% bonus Souls", "Bonus per Level": 0.39}
+            ],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Bow Damage to Giants", "Bonus per Level": 2.8},
+                {"Bonus Name": "% Emeralds", "Bonus per Level": 0.3},
+                {"Bonus Name": "% Souls Bonus from Criticals", "Bonus per Level": 0.45}
+            ],
+            "Skills": []
+        }
+    },
+    "Axes": {
+        "Adranos Axe": {
+            "Slot": "Axe",
+            "Main Bonuses": 
+                [{"Bonus Name": "% Sword Damage to Giants", "Bonus per Level": 3.6}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Bonus CpS", "Bonus per Level": 0.4},
+                {"Bonus Name": "% Bonus Souls", "Bonus per Level": 0.5},
+                {"Bonus Name": "% Fire-type Souls", "Bonus per Level": 0.6},
+                {"Bonus Name": "% Bonus Stage Rewards", "Bonus per Level": 0.4}
+            ],
+            "Skills": []
+        },
+        "Boreas Axe": {
+            "Slot": "Axe",
+            "Main Bonuses": 
+                [{"Bonus Name": "% Sword Damage to Giants", "Bonus per Level": 3.4}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Bonus CpS", "Bonus per Level": 0.5},
+                {"Bonus Name": "% Bonus Souls", "Bonus per Level": 0.6},
+                {"Bonus Name": "% Ice-type Souls", "Bonus per Level": 0.6},
+                {"Bonus Name": "% Bonus Stage Rewards", "Bonus per Level": 0.4}
+            ],
+            "Skills": []
+        },
+        "Kishar Axe": {
+            "Slot": "Axe",
+            "Main Bonuses": 
+                [{"Bonus Name": "% Sword Damage to Giants", "Bonus per Level": 3.3}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Bonus CpS", "Bonus per Level": 0.6},
+                {"Bonus Name": "% Bonus Souls", "Bonus per Level": 0.7},
+                {"Bonus Name": "% Electric-type Souls", "Bonus per Level": 0.2},
+                {"Bonus Name": "% Dark-type Souls", "Bonus per Level": 0.4},
+                {"Bonus Name": "% Bonus Stage Rewards", "Bonus per Level": 0.4}
+            ],
+            "Skills": []
+        }
+    },
+    "Bows": {
+        "Adranos Bow": {
+            "Slot": "Bow",
+            "Main Bonuses": 
+                [{"Bonus Name": "% Bow Damage to Giants", "Bonus per Level": 20}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Souls with bow", "Bonus per Level": 3},
+                {"Bonus Name": "% Bow damage to Giants", "Bonus per Level": 0.3}
+            ],
+            "Skills": [
+                {"Skill Name": "Electro-Shot"},
+                {"Skill Name": "Parallel Shot"},
+                {"Skill Name": "Piercing Shot"}
+            ]
+        },
+        "Boreas Bow": {
+            "Slot": "Bow",
+            "Main Bonuses": 
+                [{"Bonus Name": "% Bow Damage to Giants", "Bonus per Level": 20}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Souls with bow", "Bonus per Level": 2.4},
+                {"Bonus Name": "% Bow damage to Giants", "Bonus per Level": 0.5},
+                {"Bonus Name": "% Bow damage to small enemies", "Bonus per Level": 0.2}
+            ],
+            "Skills": [
+                {"Skill Name": "Electro-Shot"},
+                {"Skill Name": "Parallel Shot"},
+                {"Skill Name": "Piercing Shot"}
+            ]
+        },
+        "Bat Long Bow": {
+            "Slot": "Bow",
+            "Main Bonuses": [
+                {"Bonus Name": "% Bow damage to Small Enemies", "Bonus per Level": 100},
+                {"Bonus Name": "% Bow damage to Giants", "Bonus per Level": 100},
+                {"Bonus Name": "% Bow damage to Bosses", "Bonus per Level": 100},
+                {"Bonus Name": "% Dark-type Souls", "Bonus per Level": 2}
+            ],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Souls with bow", "Bonus per Level": 0.5},
+                {"Bonus Name": "% Bonus Souls", "Bonus per Level": 0.6},
+                {"Bonus Name": "% Electric-type Souls", "Bonus per Level": 0.2},
+                {"Bonus Name": "% Dark-type Souls", "Bonus per Level": 0.4},
+                {"Bonus Name": "% Bonus Stage Rewards", "Bonus per Level": 0.4}
+            ],
+            "Skills": [
+                {"Skill Name": "Electro-Shot"},
+                {"Skill Name": "Parallel Shot"},
+                {"Skill Name": "Piercing Shot"}
+            ],
+            "Key Item": true
+        ,
+        "Kishar Bow": {
+            "Slot": "Bow",
+            "Main Bonuses": 
+                [{"Bonus Name": "% Bow Damage to Giants", "Bonus per Level": 20}],
+            "Optional Bonuses": [
+                {"Bonus Name": "% Souls with bow", "Bonus per Level": 0.5},
+                {"Bonus Name": "% Bonus Souls", "Bonus per Level": 0.6},
+                {"Bonus Name": "% Electric-type Souls", "Bonus per Level": 0.2},
+                {"Bonus Name": "% Dark-type Souls", "Bonus per Level": 0.4},
+                {"Bonus Name": "% Bonus Stage Rewards", "Bonus per Level": 0.4}
+            ],
+            "Skills": [
+                {"Skill Name": "Electro-Shot"},
+                {"Skill Name": "Parallel Shot"},
+                {"Skill Name": "Piercing Shot"}
+            ]
+        }
+    }
+}
+}
