@@ -2,8 +2,9 @@ import json
 import os
 
 class LoadoutManager:
-    def __init__(self, items_data):
+    def __init__(self, items_data, bonuses_data):
         self.items_data = items_data
+        self.bonuses_data = bonuses_data
         self.loadouts = {}
 
     def print_colored(self, text, color_code):
@@ -14,31 +15,30 @@ class LoadoutManager:
         for slot, item_info in loadout.items():
             item = self.items_data[item_info['type']][item_info['name']]
             level = item_info['level']
+            rarity = item_info['rarity']
 
             # Add main bonuses
             for bonus in item.get("Main Bonuses", []):
-                is_excellent = item_info['rarity'] == "excellent"
-                bonus_name = bonus["Bonus Name"]
-                base_value = bonus["Bonus per Level"] * (1.25 if is_excellent else 1)
-                bonus_value = base_value * (level + 1)
+                bonus_key = bonus["Bonus Key"]
+                bonus_value = bonus["Bonus per Level"] * (level + 1) * 1.25 if rarity == "excellent" else 1
                 
-                if bonus_name in total_bonuses:
-                    total_bonuses[bonus_name] += bonus_value
+                if bonus_key in total_bonuses:
+                    total_bonuses[bonus_key] += bonus_value
                 else:
-                    total_bonuses[bonus_name] = bonus_value
+                    total_bonuses[bonus_key] = bonus_value
 
             # Add selected optional bonuses
             for selected_bonus in item_info.get('enabled_optional_bonuses', []):
-                is_excellent = item_info['rarity'] == "excellent"
-                bonus = next(b for b in item["Optional Bonuses"] if b["Bonus Name"] == selected_bonus)
-                bonus_name = bonus["Bonus Name"]
-                base_value = bonus["Bonus per Level"] * (1.25 if is_excellent else 1)
-                bonus_value = base_value * (level + 1)
-                self.print_colored(f"Adding optional bonus {bonus_name} with value {bonus_value} level {level}", '94')  # Light blue for optional bonuses
-                if bonus_name in total_bonuses:
-                    total_bonuses[bonus_name] += bonus_value
+                print(f"Adding optional bonus {selected_bonus}")
+                print(item["Optional Bonuses"])
+                bonus = next(b for b in item["Optional Bonuses"] if b["Bonus Key"] == selected_bonus)
+                bonus_key = bonus["Bonus Key"]
+                bonus_value = bonus["Bonus per Level"] * (level + 1) * 1.25 if rarity == "excellent" else 1
+                self.print_colored(f"Adding optional bonus {bonus_key} with value {bonus_value} level {level}", '94')  # Light blue for optional bonuses
+                if bonus_key in total_bonuses:
+                    total_bonuses[bonus_key] += bonus_value
                 else:
-                    total_bonuses[bonus_name] = bonus_value
+                    total_bonuses[bonus_key] = bonus_value
 
         return total_bonuses
 
@@ -84,11 +84,11 @@ class LoadoutManager:
             if item.get("Optional Bonuses"):
                 print(f"\nOptional bonuses for {item_name}:")
                 for i, bonus in enumerate(item["Optional Bonuses"], 1):
-                    print(f"{i}. {bonus['Bonus Name']} (+{bonus['Bonus per Level']} per level)")
+                    print(f"{i}. {bonus['Bonus Key']} (+{bonus['Bonus per Level']} per level)")
                 selected_indexes = input("Enter the numbers of the optional bonuses you want to enable (comma-separated): ")
                 if selected_indexes:
                     selected_indexes = [int(i) - 1 for i in selected_indexes.split(",")]
-                    enabled_optional_bonuses = [item["Optional Bonuses"][i]["Bonus Name"] for i in selected_indexes]
+                    enabled_optional_bonuses = [item["Optional Bonuses"][i]["Bonus Key"] for i in selected_indexes]
 
             # Handle skills selection
             selected_skills = []
@@ -150,6 +150,15 @@ class LoadoutManager:
             print("Loadout not found.")
             return None
     
+    def resolve_bonus_value(self, base_value, item_level, rarity):
+        return base_value * (item_level + 1) * (1.25 if rarity == "excellent" else 1)
+    
+    def resolve_bonus_name(self, bonus_key):
+        return self.bonuses_data.get(bonus_key, bonus_key)
+    
+    def resolve_bonus_base_value(self, item, bonus_key):
+        return next(bonus["Bonus per Level"] for bonus in item.get("Optional Bonuses", []) if bonus["Bonus Key"] == bonus_key)
+
     def calculate_bonuses_for_loadout(self, loadout_name):
         loadout = self.load_loadout(loadout_name)
         if loadout:
@@ -163,8 +172,9 @@ class LoadoutManager:
                 item = self.items_data[item_info['type']][item_info['name']]
                 item_name = item_info['name']
                 item_level = item_info['level']
-                main_bonuses = ', '.join([f"{bonus['Bonus Name']} \033[92m+{bonus['Bonus per Level'] * (item_level + 1)}\033[0m" for bonus in item.get('Main Bonuses', [])])
-                optional_bonuses = ', '.join([f"{bonus} \033[92m+{next(b['Bonus per Level'] * (item_level + 1) for b in item['Optional Bonuses'] if b['Bonus Name'] == bonus)}\033[0m" for bonus in item_info.get('enabled_optional_bonuses', [])])
+
+                main_bonuses = ', '.join([f"{self.resolve_bonus_name(bonus['Bonus Key'])} \033[92m+{self.resolve_bonus_value(self. bonus['Bonus per Level'], item_level, item_info['rarity'])}\033[0m" for bonus in item.get('Main Bonuses', [])])
+                optional_bonuses = ', '.join([f"{self.resolve_bonus_name(bonus_key)} \033[92m+{self.resolve_bonus_value(item, bonus_key)}\033[0m" for bonus_key in item_info.get('enabled_optional_bonuses', [])])
 
                 # Determine color for item name
                 if item_info.get('rarity') == 'excellent':
@@ -216,10 +226,15 @@ def load_items_data():
     with open("armory.json", "r") as f:
         return json.load(f)
 
+def load_bonuses_data():
+    with open("bonuses.json", "r") as f:
+        return json.load(f)
+
 def main():
     items_data = load_items_data()
+    bonuses_data = load_bonuses_data()
 
-    manager = LoadoutManager(items_data)
+    manager = LoadoutManager(items_data, bonuses_data)
     manager.load_loadouts()
 
     while True:

@@ -1,1 +1,76 @@
-{"FF Souls": {"Swords": {"name": "Adranos Blade", "level": 9, "rarity": "excellent", "type": "Swords", "enabled_optional_bonuses": ["% Bonus CpS"], "enabled_skills": []}, "Shields": {"name": "Kishar Shield", "level": 13, "rarity": "excellent", "type": "Shields", "enabled_optional_bonuses": ["% in-game Souls bonus", "% Giant Souls"], "enabled_skills": []}, "Armors": {"name": "Adranos Armor", "level": 3, "rarity": "normal", "type": "Armors", "enabled_optional_bonuses": ["% Boost's max speed", "% Giants Souls"], "enabled_skills": []}, "Helmets": {"name": "Adranos Helmet", "level": 2, "rarity": "normal", "type": "Helmets", "enabled_optional_bonuses": ["% Coins Value", "% Giants spawn rate"], "enabled_skills": []}, "Boots": {"name": "Boreas Boots", "level": 8, "rarity": "normal", "type": "Boots", "enabled_optional_bonuses": ["% Offline Souls", "% Coin Pick up Bonus"], "enabled_skills": []}, "Rings": {"name": "Victor's Ring", "level": 11, "rarity": "excellent", "type": "Rings", "enabled_optional_bonuses": ["% Critical Hit Chance"], "enabled_skills": []}, "Daggers": {"name": "Boreas Dagger", "level": 9, "rarity": "normal", "type": "Daggers", "enabled_optional_bonuses": ["% Souls Bonus in Frozen Fields", "% Bonus CpS"], "enabled_skills": []}, "Axes": {"name": "Adranos Axe", "level": 7, "rarity": "normal", "type": "Axes", "enabled_optional_bonuses": ["% Bonus CpS", "% Bonus Souls"], "enabled_skills": []}, "Bows": {"name": "Bat Long Bow", "level": 1, "rarity": "normal", "type": "Bows", "enabled_optional_bonuses": ["% Souls with bow", "% Bonus Souls", "% Electric-type Souls", "% Dark-type Souls", "% Bonus Stage Rewards"], "enabled_skills": []}}}
+{
+    "FF Souls": {
+        "Swords": {
+            "name": "Adranos Blade",
+            "level": 9,
+            "rarity": "excellent",
+            "type": "Swords",
+            "enabled_optional_bonuses": ["electric_type_souls"],
+            "enabled_skills": []
+        },
+        "Shields": {
+            "name": "Kishar Shield",
+            "level": 13,
+            "rarity": "excellent",
+            "type": "Shields",
+            "enabled_optional_bonuses": ["in_game_souls_bonus", "giants_souls"],
+            "enabled_skills": []
+        },
+        "Armors": {
+            "name": "Adranos Armor",
+            "level": 3,
+            "rarity": "normal",
+            "type": "Armors",
+            "enabled_optional_bonuses": ["boost_max_speed", "giants_souls"],
+            "enabled_skills": []
+        },
+        "Helmets": {
+            "name": "Adranos Helmet",
+            "level": 2,
+            "rarity": "normal",
+            "type": "Helmets",
+            "enabled_optional_bonuses": ["coins_value", "giants_spawn_rate"],
+            "enabled_skills": []
+        },
+        "Boots": {
+            "name": "Boreas Boots",
+            "level": 8,
+            "rarity": "normal",
+            "type": "Boots",
+            "enabled_optional_bonuses": ["offline_souls", "coin_pickup"],
+            "enabled_skills": []
+        },
+        "Rings": {
+            "name": "Victor's Ring",
+            "level": 11,
+            "rarity": "excellent",
+            "type": "Rings",
+            "enabled_optional_bonuses": ["bonus_critical_hit_chance"],
+            "enabled_skills": []
+        },
+        "Daggers": {
+            "name": "Boreas Dagger",
+            "level": 9,
+            "rarity": "normal",
+            "type": "Daggers",
+            "enabled_optional_bonuses": ["souls_bonus_in_frozen_fields", "bonus_cps"],
+            "enabled_skills": []
+        },
+        "Axes": {
+            "name": "Adranos Axe",
+            "level": 7,
+            "rarity": "normal",
+            "type": "Axes",
+            "enabled_optional_bonuses": ["bonus_cps", "souls_bonus"],
+            "enabled_skills": []
+        },
+        "Bows": {
+            "name": "Bat Long Bow",
+            "level": 1,
+            "rarity": "normal",
+            "type": "Bows",
+            "enabled_optional_bonuses": [],
+            "enabled_skills": []
+        }
+    }
+}
